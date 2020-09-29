@@ -52,7 +52,7 @@
     <main class="container-fluid">
       <div class="row">
         <div class="col-12 d-flex justify-content-center mt-5">
-          <div class="form-section">
+          <div id="marchent-info" class="form-section">
             <div class="form-title">
               <h3 class="font-weight-bold">Merchant Info</h3>
             </div>
@@ -132,13 +132,113 @@
               </div>
               <div class="button-next mt-5 text-md-right text-center">
                 <input
-                  class="btn btn-primary px-5 py-2"
+                  onclick="stage2();"
+                  class="btn px-5 py-2"
                   type="button"
                   value="Next"
                 />
               </div>
             </form>
           </div>
+
+          <br />
+
+          <div id="user-info" class="form-section display-none">
+            <div class="form-title">
+              <h3 class="font-weight-bold">User Info</h3>
+            </div>
+            <div class="form-subtitle">
+              <p>Details about your company</p>
+            </div>
+            <form>
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12">
+                  <label for="exampleFormControlInput1">Company *</label>
+                  <input
+                    type="text"
+                    class="form-control mr-5"
+                    placeholder="First name"
+                  />
+                </div>
+                <div class="col-md-6 col-12">
+                  <label for="exampleFormControlInput1">Company Type *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                  />
+                </div>
+              </div>
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12">
+                  <label for="exampleFormControlSelect1">City *</label>
+                  <div class="form-hello">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Dhaka</option>
+                      <option>Chittagong</option>
+                    </select>
+                  </div>
+                  <div class="icon-hello">
+                    <i
+                      class="fas fa-sort d-inline-block"
+                      style="font-size: 13px"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12">
+                  <label for="exampleFormControlSelect1">Zone *</label>
+                  <div class="form-hello">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Dhaka</option>
+                      <option>Chittagong</option>
+                    </select>
+                  </div>
+                  <div class="icon-hello">
+                    <i
+                      class="fas fa-sort d-inline-block"
+                      style="font-size: 13px"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12">
+                  <label for="exampleFormControlInput1">Company *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                  />
+                </div>
+                <div class="col-md-6 col-12">
+                  <label for="exampleFormControlInput1">Company Type *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                  />
+                </div>
+              </div>
+              <div
+                class="next-back-button-box d-flex justify-content-md-end justify-content-center mb-5"
+              >
+                <div
+                  onclick="backTo1();"
+                  class="button-next mt-5 mr-3 text-md-right text-center"
+                >
+                  <input class="btn px-5 py-2" type="button" value="Back" />
+                </div>
+                <div class="button-next mt-5 text-md-right text-center">
+                  <input class="btn px-5 py-2" type="button" value="Next" />
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div id="payment-info1" class="d-none">Hello Payment</div>
+          <div id="payment-info2" class="d-none">Hello payment2</div>
         </div>
       </div>
     </main>
@@ -158,6 +258,7 @@
     </div>
 
     <!-- Optional JavaScript -->
+    <script src="/main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
