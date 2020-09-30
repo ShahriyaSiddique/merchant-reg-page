@@ -62,6 +62,10 @@
   );
 }
 
+.button-back {
+  background-color: #ed67ff;
+}
+
 .button-next input {
   background-color: #b309c1;
   color: white;
@@ -131,6 +135,10 @@ select {
   height: auto;
   bottom: 0%;
   left: 6%;
+}
+
+.full-width-form {
+  width: 97%;
 }
 
 /* animation */
