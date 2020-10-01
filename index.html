@@ -18,6 +18,11 @@
 
     <link rel="stylesheet" href="assets/style.css" />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/0ba748931a.js"
       crossorigin="anonymous"
@@ -37,7 +42,7 @@
             <img src="assets/images/logo.png" alt="" />
           </div>
         </div>
-        <div class="col-md-8 col-12">
+        <div class="col-md-6 col-12 d-flex justify-content-center">
           <div class="progress-container">
             <div class="progress-name d-flex justify-content-between">
               <p>Company Details</p>
@@ -53,557 +58,341 @@
     </header>
 
     <main class="container-fluid">
-      <div class="d-flex justify-content-center mt-5">
-        <div id="marchent-info" class="form-section">
-          <div class="form-title">
-            <h3 class="font-weight-bold">Merchant Info</h3>
-          </div>
-          <div class="form-subtitle">
-            <p>Details about your company</p>
-          </div>
-          <form>
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Company *</label>
-                <input
-                  type="text"
-                  class="form-control mr-5"
-                  placeholder="First name"
-                />
-              </div>
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Company Type *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
+      <div class="row">
+        <div
+          class="form-container col-md-12 col-12 d-flex justify-content-center mt-5"
+        >
+          <div id="marchent-info" class="form-section">
+            <div class="form-title">
+              <h3 class="font-weight-bold">Merchant Info</h3>
             </div>
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlSelect1">City *</label>
-                <div class="form-hello">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Dhaka</option>
-                    <option>Chittagong</option>
-                  </select>
+            <div class="form-subtitle">
+              <p>Details about your company</p>
+            </div>
+            <form>
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12">
+                  <label for="marchentInfoCompany">Company *</label>
+                  <input
+                    type="text"
+                    id="marchentInfoCompany"
+                    class="form-control mr-5"
+                    placeholder="e.g Company Name"
+                  />
                 </div>
-                <div class="icon-hello">
-                  <i
-                    class="fas fa-sort d-inline-block"
-                    style="font-size: 13px"
-                  ></i>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlSelect1">Zone *</label>
-                <div class="form-hello">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Dhaka</option>
-                    <option>Chittagong</option>
-                  </select>
-                </div>
-                <div class="icon-hello">
-                  <i
-                    class="fas fa-sort d-inline-block"
-                    style="font-size: 13px"
-                  ></i>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Company *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Company Type *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-            </div>
-            <div
-              id="marchentToUser"
-              class="button-next mt-5 text-md-right text-center"
-            >
-              <input class="btn px-5 py-2" type="button" value="Next" />
-            </div>
-          </form>
-        </div>
-
-        <div id="user-info" class="form-section display-none">
-          <div class="form-title">
-            <h3 class="font-weight-bold">User Info</h3>
-          </div>
-          <div class="form-subtitle">
-            <p>Details about you</p>
-          </div>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Name</label>
-              <input
-                type="text"
-                class="form-control full-width-form"
-                id="exampleInputEmail1"
-                placeholder="e.g: User Name"
-              />
-            </div>
-
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Moblie *</label>
-                <input
-                  type="tel"
-                  class="form-control mr-5"
-                  placeholder="e.g: 01XXXXXXXX"
-                />
-              </div>
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Email *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="e.g: user@email.com"
-                />
-              </div>
-            </div>
-
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Password *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="e.g: AwC2855ty"
-                />
-              </div>
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Confirm Password *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="e.g: AwC2855ty"
-                />
-              </div>
-            </div>
-            <div
-              class="next-back-button-box d-flex justify-content-md-end justify-content-center mb-5"
-            >
-              <div class="mt-5 mr-1 text-md-right text-center">
-                <input
-                  id="userToMerchant"
-                  class="btn button-back px-5 py-2"
-                  type="button"
-                  value="Back"
-                />
-              </div>
-              <div class="button-next mt-5 text-md-right text-center">
-                <input
-                  id="userToPayment"
-                  class="btn px-5 py-2"
-                  type="button"
-                  value="Next"
-                />
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <!-- <div id="payment-info" class="form-section display-none">
-          <div class="form-title">
-            <h3 class="font-weight-bold">payment Info</h3>
-          </div>
-          <div class="form-subtitle">
-            <p>Details about your company</p>
-          </div>
-          <form>
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Company *</label>
-                <input
-                  type="text"
-                  class="form-control mr-5"
-                  placeholder="First name"
-                />
-              </div>
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Company Type *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-            </div>
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlSelect1">City *</label>
-                <div class="form-hello">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Dhaka</option>
-                    <option>Chittagong</option>
-                  </select>
-                </div>
-                <div class="icon-hello">
-                  <i
-                    class="fas fa-sort d-inline-block"
-                    style="font-size: 13px"
-                  ></i>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlSelect1">Zone *</label>
-                <div class="form-hello">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Dhaka</option>
-                    <option>Chittagong</option>
-                  </select>
-                </div>
-                <div class="icon-hello">
-                  <i
-                    class="fas fa-sort d-inline-block"
-                    style="font-size: 13px"
-                  ></i>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Company *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Company Type *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-            </div>
-            <div
-              id="marchentToUser"
-              class="button-next mt-5 text-md-right text-center"
-            >
-              <input class="btn px-5 py-2" type="button" value="Next" />
-            </div>
-          </form>
-        </div> -->
-
-        <!-- <div id="user-info" class="form-section display-none">
-          <div class="form-title">
-            <h3 class="font-weight-bold">User Info</h3>
-          </div>
-          <div class="form-subtitle">
-            <p>Details about you</p>
-          </div>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Name</label>
-              <input
-                type="text"
-                class="form-control full-width-form"
-                id="exampleInputEmail1"
-                placeholder="e.g: User Name"
-              />
-            </div>
-
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Moblie *</label>
-                <input
-                  type="tel"
-                  class="form-control mr-5"
-                  placeholder="e.g: 01XXXXXXXX"
-                />
-              </div>
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Email *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="e.g: user@email.com"
-                />
-              </div>
-            </div>
-
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Password *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="e.g: AwC2855ty"
-                />
-              </div>
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Confirm Password *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="e.g: AwC2855ty"
-                />
-              </div>
-            </div>
-            <div
-              class="next-back-button-box d-flex justify-content-md-end justify-content-center mb-5"
-            >
-              <div
-                id="userToPayment"
-                class="mt-5 mr-1 text-md-right text-center"
-              >
-                <input
-                  class="btn button-back px-5 py-2"
-                  type="button"
-                  value="Back"
-                />
-              </div>
-              <div
-                onclick="stage3();"
-                class="button-next mt-5 text-md-right text-center"
-              >
-                <input class="btn px-5 py-2" type="button" value="Next" />
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div id="payment-info" class="form-section display-none">
-          <div class="form-title">
-            <h3 class="font-weight-bold">User Info</h3>
-          </div>
-          <div class="form-subtitle">
-            <p>Details about you</p>
-          </div>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Name</label>
-              <input
-                type="text"
-                class="form-control full-width-form"
-                id="exampleInputEmail1"
-                placeholder="e.g: User Name"
-              />
-            </div>
-
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Moblie *</label>
-                <input
-                  type="tel"
-                  class="form-control mr-5"
-                  placeholder="e.g: 01XXXXXXXX"
-                />
-              </div>
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Email *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="e.g: user@email.com"
-                />
-              </div>
-            </div>
-
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Password *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="e.g: AwC2855ty"
-                />
-              </div>
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlInput1">Confirm Password *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="e.g: AwC2855ty"
-                />
-              </div>
-            </div>
-            <div
-              class="next-back-button-box d-flex justify-content-md-end justify-content-center mb-5"
-            >
-              <div
-                id="userToPayment"
-                class="mt-5 mr-1 text-md-right text-center"
-              >
-                <input
-                  class="btn button-back px-5 py-2"
-                  type="button"
-                  value="Back"
-                />
-              </div>
-              <div
-                onclick="stage3();"
-                class="button-next mt-5 text-md-right text-center"
-              >
-                <input class="btn px-5 py-2" type="button" value="Next" />
-              </div>
-            </div>
-          </form>
-        </div> -->
-
-        <div id="payment-info" class="form-section display-none">
-          <div class="form-title">
-            <h3 class="font-weight-bold">Payment Info</h3>
-          </div>
-          <div class="form-subtitle">
-            <p>Details about payment system</p>
-          </div>
-          <form>
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12">
-                <label for="exampleFormControlSelect1">Payment Method</label>
-                <div class="form-hello">
-                  <select
-                    onchange="paymentChange();"
+                <div class="col-md-6 col-12">
+                  <label for="marchentInfoCompanyType">Company Type *</label>
+                  <input
+                    type="text"
+                    id="marchentInfoCompanyType"
                     class="form-control"
-                    id="payment-method"
+                    placeholder="e.g Company Type"
+                  />
+                </div>
+              </div>
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12">
+                  <label for="marchentInfoCity">City *</label>
+                  <div class="form-hello">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Dhaka</option>
+                      <option>Chittagong</option>
+                    </select>
+                  </div>
+                  <div class="icon-hello">
+                    <i
+                      class="fas fa-sort d-inline-block"
+                      style="font-size: 13px"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12">
+                  <label for="marchentInfoZone">Zone *</label>
+                  <div class="form-hello">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Dhaka</option>
+                      <option>Chittagong</option>
+                    </select>
+                  </div>
+                  <div class="icon-hello">
+                    <i
+                      class="fas fa-sort d-inline-block"
+                      style="font-size: 13px"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12">
+                  <label for="marchentInfoSite">Site url</label>
+                  <input
+                    type="url"
+                    id="marchentInfoSite"
+                    class="form-control"
+                    placeholder="e.g www.something.com"
+                  />
+                </div>
+                <div class="col-md-6 col-12">
+                  <label for="marchentInfoAddress">Address *</label>
+                  <input
+                    type="text"
+                    id="marchentInfoAddress"
+                    class="form-control"
+                    placeholder="e.g 8/9,shukrabad, Dhaka"
+                  />
+                </div>
+              </div>
+              <div
+                id="marchentToUser"
+                class="next-back-button-box button-next text-md-right text-center"
+              >
+                <input class="btn px-5 py-2" type="button" value="Next" />
+              </div>
+            </form>
+          </div>
+
+          <div id="user-info" class="form-section display-none">
+            <div class="form-title">
+              <h3 class="font-weight-bold">User Info</h3>
+            </div>
+            <div class="form-subtitle">
+              <p>Details about you</p>
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="userInfoName">Name</label>
+                <input
+                  type="text"
+                  class="form-control full-width-form"
+                  id="userInfoName"
+                  placeholder="e.g: User Name"
+                />
+              </div>
+
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12">
+                  <label for="userInfoMobile">Moblie *</label>
+                  <input
+                    type="tel"
+                    id="userInfoMobile"
+                    class="form-control mr-5"
+                    placeholder="e.g: 01XXXXXXXX"
+                  />
+                </div>
+                <div class="col-md-6 col-12">
+                  <label for="userInfoEmail">Email *</label>
+                  <input
+                    type="email"
+                    id="userInfoEmail"
+                    class="form-control"
+                    placeholder="e.g: user@email.com"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12">
+                  <label for="userInfoPassword">Password *</label>
+                  <input
+                    type="password"
+                    id="userInfoPassword"
+                    class="form-control"
+                    placeholder="e.g: AwC2855ty"
+                  />
+                </div>
+                <div class="col-md-6 col-12">
+                  <label for="userInfoPasswordConfirm"
+                    >Confirm Password *</label
                   >
-                    <option value="bkash">BKash</option>
-                    <option value="bank">Bank</option>
-                  </select>
-                </div>
-                <div class="icon-hello">
-                  <i
-                    class="fas fa-sort d-inline-block"
-                    style="font-size: 13px"
-                  ></i>
+                  <input
+                    type="password"
+                    id="userInfoPasswordConfirm"
+                    class="form-control"
+                    placeholder="e.g: AwC2855ty"
+                  />
                 </div>
               </div>
+              <div
+                class="next-back-button-box d-flex justify-content-md-end justify-content-center"
+              >
+                <div class="mt-5 mr-1 text-md-right text-center">
+                  <input
+                    id="userToMerchant"
+                    class="btn button-back px-5 py-2"
+                    type="button"
+                    value="Back"
+                  />
+                </div>
+                <div class="button-next mt-5 text-md-right text-center">
+                  <input
+                    id="userToPayment"
+                    class="btn px-5 py-2"
+                    type="button"
+                    value="Next"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
 
-              <div id="bkashType" class="col-md-6 col-12 bkash">
-                <label for="exampleFormControlSelect1">Bkash Type</label>
-                <div class="form-hello">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Agent</option>
-                    <option>Personal</option>
-                  </select>
-                </div>
-                <div class="icon-hello">
-                  <i
-                    class="fas fa-sort d-inline-block"
-                    style="font-size: 13px"
-                  ></i>
-                </div>
-              </div>
-
-              <div id="selectBank" class="col-md-6 col-12 bank display-none">
-                <label for="exampleFormControlSelect1">Select Bank</label>
-                <div class="form-hello">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Islamic</option>
-                    <option>Others</option>
-                  </select>
-                </div>
-                <div class="icon-hello">
-                  <i
-                    class="fas fa-sort d-inline-block"
-                    style="font-size: 13px"
-                  ></i>
-                </div>
-              </div>
+          <div id="payment-info" class="form-section display-none">
+            <div class="form-title">
+              <h3 class="font-weight-bold">Payment Info</h3>
             </div>
+            <div class="form-subtitle">
+              <p>Details about payment system</p>
+            </div>
+            <form>
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12">
+                  <label for="payment-method">Payment Method *</label>
+                  <div class="form-hello">
+                    <select
+                      onchange="paymentChange();"
+                      class="form-control"
+                      id="payment-method"
+                    >
+                      <option value="bkash">BKash</option>
+                      <option value="bank">Bank</option>
+                    </select>
+                  </div>
+                  <div class="icon-hello">
+                    <i
+                      class="fas fa-sort d-inline-block"
+                      style="font-size: 13px"
+                    ></i>
+                  </div>
+                </div>
 
-            <div class="form-row mt-4">
-              <div id="bkashNumber" class="col-md-6 col-12 bkash">
-                <label for="exampleFormControlInput1">Bkash Number</label>
-                <input
-                  type="text"
-                  class="form-control mr-5"
-                  placeholder="First name"
-                />
+                <div id="bkashType" class="col-md-6 col-12 bkash">
+                  <label for="paymentMethodBkashType">Bkash Type *</label>
+                  <div class="form-hello">
+                    <select class="form-control" id="paymentMethodBkashType">
+                      <option>Agent</option>
+                      <option>Personal</option>
+                    </select>
+                  </div>
+                  <div class="icon-hello">
+                    <i
+                      class="fas fa-sort d-inline-block"
+                      style="font-size: 13px"
+                    ></i>
+                  </div>
+                </div>
+
+                <div id="selectBank" class="col-md-6 col-12 bank display-none">
+                  <label for="paymentMethodSelectBank">Select Bank *</label>
+                  <div class="form-hello">
+                    <select class="form-control" id="paymentMethodSelectBank">
+                      <option>Islamic</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+                  <div class="icon-hello">
+                    <i
+                      class="fas fa-sort d-inline-block"
+                      style="font-size: 13px"
+                    ></i>
+                  </div>
+                </div>
               </div>
-              <div id="confirmBkashNumber" class="col-md-6 col-12 bkash">
-                <label for="exampleFormControlInput1"
-                  >Confirm Bkash Number</label
+
+              <div class="form-row">
+                <div id="bkashNumber" class="col-md-6 col-12 bkash mt-4">
+                  <label for="paymentMethodBkashNumber">Bkash Number *</label>
+                  <input
+                    type="text"
+                    id="paymentMethodBkashNumber"
+                    class="form-control mr-5"
+                    placeholder="e.g 01xxxxxxxx"
+                  />
+                </div>
+                <div id="confirmBkashNumber" class="col-md-6 col-12 bkash mt-4">
+                  <label for="paymentMethodBkashNumberConfirm"
+                    >Confirm Bkash Number *</label
+                  >
+                  <input
+                    type="text"
+                    id="paymentMethodBkashNumberConfirm"
+                    class="form-control"
+                    placeholder="e.g 01xxxxxxxx"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12 bank display-none">
+                  <label for="paymentMethodBankAccName"
+                    >Bank Account Holder Name *</label
+                  >
+                  <input
+                    type="text"
+                    id="paymentMethodBankAccName"
+                    class="form-control mr-5"
+                    placeholder="e.g Some One"
+                  />
+                </div>
+
+                <div class="col-md-6 col-12 bank display-none">
+                  <label for="paymentMethodBankAccNo">Bank Account No *</label>
+                  <input
+                    type="text"
+                    id="paymentMethodBankAccNo"
+                    class="form-control"
+                    placeholder="e.g xxx xxx xxxx"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row mt-4">
+                <div class="col-md-6 col-12 bank display-none">
+                  <label for="paymentMethodBankBranch">Branch Name *</label>
+                  <input
+                    type="text"
+                    id="paymentMethodBankBranch"
+                    class="form-control mr-5"
+                    placeholder="e.g Dhanmondi"
+                  />
+                </div>
+
+                <div class="col-md-6 col-12 bank display-none">
+                  <label for="paymentMethodBankRouting">Routing No *</label>
+                  <input
+                    type="text"
+                    id="paymentMethodBankRouting"
+                    class="form-control"
+                    placeholder="e.g eg15er"
+                  />
+                </div>
+              </div>
+
+              <div class="condition-row mt-3">
+                <input type="checkbox" name="check-me" />
+                <label for="check-me"
+                  >Accept Our <a href="#">Terms &amp; Conditions</a></label
                 >
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-            </div>
-
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12 bank display-none">
-                <label for="exampleFormControlInput1"
-                  >Bank Account Holder Name *</label
-                >
-                <input
-                  type="text"
-                  class="form-control mr-5"
-                  placeholder="First name"
-                />
               </div>
 
-              <div class="col-md-6 col-12 bank display-none">
-                <label for="exampleFormControlInput1">Bank Account No *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-            </div>
+              <div
+                class="next-back-button-box d-flex justify-content-md-end justify-content-center"
+              >
+                <div class="mr-1 text-md-right text-center">
+                  <input
+                    id="paymentToUser"
+                    class="btn button-back px-5 py-2"
+                    type="button"
+                    value="Back"
+                  />
+                </div>
 
-            <div class="form-row mt-4">
-              <div class="col-md-6 col-12 bank display-none">
-                <label for="exampleFormControlInput1">Brance Name *</label>
-                <input
-                  type="text"
-                  class="form-control mr-5"
-                  placeholder="First name"
-                />
+                <div class="button-next text-md-right text-center">
+                  <input class="btn px-5 py-2" type="button" value="Finish" />
+                </div>
               </div>
-
-              <div class="col-md-6 col-12 bank display-none">
-                <label for="exampleFormControlInput1">Routing No *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-            </div>
-
-            <div
-              class="next-back-button-box d-flex justify-content-md-end justify-content-center mb-5"
-            >
-              <div class="mt-5 mr-1 text-md-right text-center">
-                <input
-                  id="paymentToUser"
-                  class="btn button-back px-5 py-2"
-                  type="button"
-                  value="Back"
-                />
-              </div>
-
-              <div class="button-next mt-5 text-md-right text-center">
-                <input class="btn px-5 py-2" type="button" value="Finish" />
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </main>

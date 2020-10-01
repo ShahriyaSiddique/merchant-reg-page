@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .logo {
@@ -15,10 +16,20 @@
 }
 
 .progress-container {
-  margin-top: 5%;
-  margin-left: 5%;
-  width: 70%;
+  margin-top: 60px;
+  margin-left: 60px;
+  width: 600px;
 }
+
+.progress-name {
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.progress-name p {
+  margin: 0;
+}
+
 .progress-frame {
   margin-top: 16px;
   width: 100%;
@@ -33,9 +44,28 @@
   width: 3%;
   height: 16px;
   background-color: #b309c1;
-
   margin: 0px 2px;
   border-radius: 10px;
+}
+
+#payment-info,
+#user-info,
+#marchent-info {
+  min-height: 430px;
+  position: relative;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  font-size: 13px;
 }
 
 .form-section {
@@ -50,7 +80,7 @@
   color: #b5b5b5;
 }
 .form-control {
-  width: 350px;
+  width: 336px;
   height: 50px;
 }
 
@@ -60,6 +90,23 @@
     rgba(255, 255, 255, 0.21) 0%,
     rgba(51, 51, 51, 0.05) 77%
   );
+}
+
+.condition-row {
+  font-family: real-mid;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.condition-row a {
+  text-decoration: none;
+  color: black;
+}
+
+.next-back-button-box {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
 }
 
 .button-back {
@@ -296,6 +343,11 @@ select {
   }
   .progress-container {
     width: 90%;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .bike-box {
+    margin-bottom: 20px;
   }
 }
 
@@ -305,5 +357,14 @@ select {
   }
   .mainbox {
     margin-top: 30%;
+  }
+  #payment-info,
+  #user-info,
+  #marchent-info {
+    height: 700px;
+    position: relative;
+  }
+  .bike-area {
+    margin-top: 100px;
   }
 }
