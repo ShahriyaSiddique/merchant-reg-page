@@ -188,6 +188,18 @@ select {
   width: 97%;
 }
 
+.mar-bottom {
+  margin-bottom: 10px;
+}
+
+.mar-row-bottom {
+  margin-bottom: 10px;
+}
+
+.usrInfoNameMargin {
+  margin-bottom: 20px;
+}
+
 /* animation */
 .display-none {
   display: none;
@@ -364,6 +376,14 @@ select {
     height: 700px;
     position: relative;
   }
+  .mar-row-bottom {
+    margin-bottom: 0;
+  }
+
+  .usrInfoNameMargin {
+    margin-bottom: 10px;
+  }
+
   .bike-area {
     margin-top: 100px;
   }
